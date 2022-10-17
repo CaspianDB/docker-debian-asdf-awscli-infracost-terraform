@@ -15,6 +15,7 @@ ADD https://truststore.pki.rds.amazonaws.com/global/global-bundle.pem /usr/local
 RUN update-ca-certificates
 
 ADD https://raw.githubusercontent.com/dex4er/tf/main/tf.sh /usr/local/bin/tf
+RUN chmod +x /usr/local/bin/tf
 
 RUN while read -r plugin _version; do asdf plugin add "$plugin"; done < .tool-versions
 RUN asdf install
