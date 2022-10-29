@@ -8,7 +8,7 @@ COPY .tool-versions /root/
 
 RUN apt-get -q -y update
 RUN apt-get -q -y --no-install-recommends install \
-  bzip2 git-lfs groff-base jq openssh-client procps pv xz-utils
+  bzip2 git-lfs gnupg groff-base jq openssh-client procps pv xz-utils
 
 ADD https://truststore.pki.rds.amazonaws.com/global/global-bundle.pem /usr/local/share/ca-certificates/global-bundle.crt
 
