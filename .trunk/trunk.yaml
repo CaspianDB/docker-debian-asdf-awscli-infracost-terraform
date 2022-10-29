@@ -13,7 +13,7 @@ actions:
     - trunk-cache-prune
     - trunk-upgrade-available
 cli:
-  version: 0.18.1-beta
+  version: 1.0.1
 lint:
   enabled:
     - actionlint@1.6.21
